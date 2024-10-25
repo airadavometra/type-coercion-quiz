@@ -57,6 +57,7 @@ export const Quiz = () => {
               src={index + 1 <= lives ? "/HeartRed.png" : "/HeartGrey.png"}
               aria-hidden
               className={s.heartIcon}
+              alt="Heart icon"
             />
           ))}
         </span>

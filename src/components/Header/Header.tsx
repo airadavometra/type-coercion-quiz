@@ -51,6 +51,7 @@ export const Header = () => {
                 <img
                   src={`/MenuUnderline_${title.replace(/\s/g, "")}.png`}
                   aria-hidden
+                  alt="GitHub logo"
                   className={classNames(
                     s.linkUnderline,
                     [s[title.replace(/\s/g, "").toLowerCase()]],
