@@ -35,7 +35,7 @@
 }
 .background {
   padding: min(3rem, 64px) min(2.5rem, 48px);
-  background-color: var(--grey);
+  background-color: var(--background-color-grey);
   border-radius: 28px;
 }
 .tableOverflow {

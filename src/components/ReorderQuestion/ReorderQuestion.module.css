@@ -12,7 +12,7 @@
   flex-direction: column;
   gap: min(2.5rem, 48px);
   align-items: center;
-  background-color: var(--grey);
+  background-color: var(--background-color-grey);
   border-radius: 28px;
 }
 .codeWrapper {
@@ -37,12 +37,12 @@
   margin: min(0.5rem, 12px);
   display: flex;
   align-items: center;
-  background-color: var(--grey);
+  background-color: var(--background-color-grey);
   border: 2px solid var(--yellow);
   border-radius: 14px;
 }
 .card:hover {
-  border-color: var(--darkGrey);
+  border-color: var(--grey);
 }
 .card.correct {
   border-color: var(--green);
@@ -61,8 +61,8 @@
   margin-left: auto;
   font-size: clamp(1rem, 0.6429rem + 1.7857vw, 1.5rem);
   font-weight: 500;
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--background-color);
+  background-color: var(--text-color);
   border-radius: 48px 4px 48px 48px;
 }
 

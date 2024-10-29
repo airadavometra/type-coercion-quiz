@@ -1,7 +1,11 @@
 import { FC } from "react";
 import { LightAsync as SyntaxHighlighter } from "react-syntax-highlighter";
 import javascript from "react-syntax-highlighter/dist/cjs/languages/hljs/javascript";
-import { a11yLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import {
+  a11yLight,
+  a11yDark,
+} from "react-syntax-highlighter/dist/esm/styles/hljs";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 SyntaxHighlighter.registerLanguage("javascript", javascript);
 
@@ -10,14 +14,16 @@ export interface CodeProps {
 }
 
 export const Code: FC<CodeProps> = ({ children }) => {
+  const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+
   return (
     <SyntaxHighlighter
       language="javascript"
-      style={a11yLight}
+      style={isDarkMode ? a11yDark : a11yLight}
       customStyle={{
         width: "fit-content",
         display: "inline",
-        backgroundColor: "var(--grey) !important",
+        backgroundColor: "var(--background-color-grey) !important",
       }}
     >
       {children}

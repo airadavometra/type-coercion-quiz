@@ -6,8 +6,9 @@
 
   --black: #242424;
   --white: #ffffff;
-  --grey: #f6f6f9;
-  --darkGrey: #adadb0;
+  --lightGrey: #f6f6f9;
+  --grey: #adadb0;
+  --darkGrey: #333333;
 
   --yellow: #ffd900;
   --red: #ed435c;
@@ -15,6 +16,7 @@
 
   --text-color: var(--black);
   --background-color: var(--white);
+  --background-color-grey: var(--lightGrey);
 }
 html,
 body,
@@ -48,4 +50,12 @@ a {
 
 .frozen {
   overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --text-color: var(--white);
+    --background-color: var(--black);
+    --background-color-grey: var(--darkGrey);
+  }
 }
