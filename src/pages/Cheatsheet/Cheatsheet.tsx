@@ -756,29 +756,44 @@ export const CheatsheetPage = () => {
           <h2 className={s.subtitle}>Resources</h2>
           <ul className={s.list}>
             <li>
-              <Link to="https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839">
+              <Link
+                to="https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839"
+                className={s.link}
+              >
                 JavaScript type coercion explained
               </Link>{" "}
               by Alexey Samoshkin
             </li>
             <li>
-              <Link to="https://javascript.info/type-conversions">
+              <Link
+                to="https://javascript.info/type-conversions"
+                className={s.link}
+              >
                 Type Conversions
               </Link>{" "}
               and{" "}
-              <Link to="https://javascript.info/object-toprimitive">
+              <Link
+                to="https://javascript.info/object-toprimitive"
+                className={s.link}
+              >
                 Object to primitive conversion
               </Link>{" "}
               lessons
             </li>
             <li>
-              <Link to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence">
+              <Link
+                to="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence"
+                className={s.link}
+              >
                 Operator Precesence
               </Link>{" "}
               explained on MSDN
             </li>
             <li>
-              <Link to="https://dorey.github.io/JavaScript-Equality-Table/">
+              <Link
+                to="https://dorey.github.io/JavaScript-Equality-Table/"
+                className={s.link}
+              >
                 JavaScript Comparison Table
               </Link>
             </li>

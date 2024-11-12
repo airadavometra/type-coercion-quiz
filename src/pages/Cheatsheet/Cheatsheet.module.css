@@ -109,4 +109,14 @@
   .background {
     padding: min(2.5rem, 48px) min(1.5rem, 32px);
   }
+  .decoratedFragment {
+    white-space: wrap;
+  }
+  .list {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .link {
+    white-space: wrap;
+  }
 }
